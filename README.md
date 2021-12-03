@@ -1,6 +1,6 @@
 # JOpenTDB
 JOpenTDB is Lightweight, Fast , Easy To Use Sync and Async Wrapper for https://opentdb.com (an open source trivia api) 
-### Version : 0.2
+### Version : 0.1.0
 
 ## Add to your projects
 Easy to add in your projects using gradle, maven or jar
@@ -18,7 +18,7 @@ allprojects {
 - Add the dependency (replace version with the version on top)
 ```gradle
 dependencies {
-	        implementation 'com.github.shivam1608:JMailTM:0.2'
+	        implementation 'com.github.shivam1608:JOpenTDB:0.1.0'
 	}
 ```
 
@@ -38,8 +38,8 @@ dependencies {
 
 	<dependency>
 	    <groupId>com.github.shivam1608</groupId>
-	    <artifactId>JMailTM</artifactId>
-	    <version>0.2</version>
+	    <artifactId>JOpenTDB</artifactId>
+	    <version>0.1.0</version>
 	</dependency>
 
 
@@ -48,5 +48,5 @@ dependencies {
 ### Jar 
 Download the jar from this repo 
 ```
-out/artifact/JMailTM.jar or Use the Release Section
+out/artifact/JOpenTDB.jar or Use the Release Section
 ```
