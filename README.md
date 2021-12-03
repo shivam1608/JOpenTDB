@@ -103,6 +103,7 @@ OpenTDB trivia = new OpenTDB();
 - With Session Token
 ```java 
 import me.shivzee.OpenTDB;
+import me.shivzee.session.Session;
 
 OpenTDB trivia = new OpenTDB(Session.create());
 ```
@@ -156,9 +157,9 @@ Difficulty.EASY;   // Easy Questions
 ### Encoding
 - use Default if not Experienced
 ```java
-Encoding.DEFAULT;
-Encoding.URL_ENCODED;
-Encoding.BASE64;
+Encoding.DEFAULT; // Recomended for new ones
+Encoding.URL_ENCODED; // IDK Why Someone need it 
+Encoding.BASE64; // Best as can be decoded easily
 
 ```
 - using base64 is recommended which can be easily decoded 
@@ -166,5 +167,60 @@ Encoding.BASE64;
 ### Category 
 - Refer to JavaDocs for All Category
 ```java
+Category.GENERAL_KNOWLEDGE;
+Category.SCIENCE_COMPUTERS;
+Category.SCIENCE_GADGETS;
+Category.ENTERTAINMENT_VIDEO_GAMES;
+// More Category Check Docs
+```
+### Get Total Questions Present in a Category on Database
+```java
+int totalCount = Category.SCIENCE_COMPUTERS.getTotalCount();
+```
+
+## Session Class 
+- Create a Session Token 
+```java
+import me.shivzee.OpenTDB;
+import me.shivzee.session.Session;
+
+OpenTDB trivia = new OpenTDB(Session.create());
+```
+- OR Set it 
+```java
+import me.shivzee.OpenTDB;
+import me.shivzee.session.Session;
+
+OpenTDB trivia = new OpenTDB();
+trivia.setSessionToken(Session.create());
+```
+- Get Current Token Using
+```java
+import me.shivzee.OpenTDB;
+import me.shivzee.session.Session;
+
+OpenTDB trivia = new OpenTDB();
+trivia.setSessionToken(Session.create());
+trivia.getSessionToken();
 
 ```
+- Reset / Destroy a Token 
+```java
+import me.shivzee.OpenTDB;
+import me.shivzee.session.Session;
+
+Session.destroy("TOKEN HERE");
+
+```
+- Know more about session tokens on API Docs of OpenTDB API
+
+### Refer to JavaDocs For More Info 
+[JOpenTDB JavaDocs](https://shivam1608.github.io/JMailTM/)
+
+## Open Source Project 
+Author : Shizee
+IDE Used : IntelliJ
+
+### Dependencies
+[JSONSimple](https://github.com/fangyidong/json-simple)
+
