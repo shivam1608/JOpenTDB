@@ -121,6 +121,12 @@ Category category = question.getCategory(); // The Category of The Question
 # Using Options
 - The getTrivia() is an overloaded function
 ```java
+Category category = Category.RANDOM;
+Difficulty difficulty = Difficulty.HARD;
+Encoding encoding = Encoding.DEFAULT;
+Type type = Type.MULTIPLE;
 
+List<Question> questions = trivia.getTrivia(10 , category , type , encoding ,difficulty);
+trivia.getTriviaAsync(10 , category , type, encoding , difficulty , (triviaQuestions)->{});
 ```
 
