@@ -50,6 +50,8 @@ Download the jar from this repo
 ```
 out/artifact/JOpenTDB.jar or Use the Release Section
 ```
+## Looking for JavaDoc? 
+[JMailTM JavaDocs](https://shivam1608.github.io/JOpenTDB/)
 
 # Quick Start
 - Get 10 Questions for Trivia (Synchronous)
@@ -215,7 +217,7 @@ Session.destroy("TOKEN HERE");
 - Know more about session tokens on API Docs of OpenTDB API
 
 ### Refer to JavaDocs For More Info 
-[JOpenTDB JavaDocs](https://shivam1608.github.io/JMailTM/)
+[JOpenTDB JavaDocs](https://shivam1608.github.io/JOpenTDB/)
 
 ## Open Source Project 
 Author : Shizee
