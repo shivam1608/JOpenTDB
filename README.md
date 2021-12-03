@@ -1,7 +1,7 @@
 ![JitPack](https://img.shields.io/jitpack/v/github/shivam1608/JOpenTDB?color=green&label=Jitpack)
-![GitHub repo size](https://img.shields.io/github/repo-size/shivam1608/JOpenTDB?style=for-the-badge)
-![JitPack](https://img.shields.io/jitpack/v/github/shivam1608/JOpenTDB?label=Build&logo=github&style=for-the-badge)
-![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/shivam1608/JOpenTDB?style=flat)
+![JitPack](https://img.shields.io/jitpack/v/github/shivam1608/JOpenTDB?label=Build&logo=github&style=flat)
+![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github&style=flat)
 
 # JOpenTDB
 JOpenTDB is Lightweight, Fast , Easy To Use Sync and Async Wrapper for https://opentdb.com (an open source trivia api) 
