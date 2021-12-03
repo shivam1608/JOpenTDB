@@ -118,8 +118,16 @@ Difficulty difficulty = question.getDifficulty(); // Difficulty
 Category category = question.getCategory(); // The Category of The Question
 ```
 
+## Fetch Limited Questions 
+- Just Specify the Limit
+```java
+List<Question> questions = trivia.getTrivia(10 );
+trivia.getTriviaAsync(10 , (triviaQuestions)->{});
+
+```
+
 # Using Options
-- The getTrivia() is an overloaded function
+- You can specify Attributes to The Questions
 ```java
 Category category = Category.RANDOM;
 Difficulty difficulty = Difficulty.HARD;
@@ -129,4 +137,34 @@ Type type = Type.MULTIPLE;
 List<Question> questions = trivia.getTrivia(10 , category , type , encoding ,difficulty);
 trivia.getTriviaAsync(10 , category , type, encoding , difficulty , (triviaQuestions)->{});
 ```
+### Types
+```java
+Type.RANDOM;  // Mixed Type of Questions
+Type.MULTIPLE;  // Quesion with 3 Wrong Options and 1 Answer
+Type.BOOLEAN;   // True False Questions
+```
 
+### Difficulty
+```java
+Difficulty.RANDOM; // Random Difficulty Questions
+Difficulty.HARD;  // Hard Questions
+Difficulty.MEDIUM;  // Medium Questions
+Difficulty.EASY;   // Easy Questions
+
+```
+
+### Encoding
+- use Default if not Experienced
+```java
+Encoding.DEFAULT;
+Encoding.URL_ENCODED;
+Encoding.BASE64;
+
+```
+- using base64 is recommended which can be easily decoded 
+
+### Category 
+- Refer to JavaDocs for All Category
+```java
+
+```
