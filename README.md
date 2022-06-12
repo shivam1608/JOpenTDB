@@ -56,7 +56,7 @@ Download the jar from this repo
 out/artifact/JOpenTDB.jar or Use the Release Section
 ```
 ## Looking for JavaDoc? 
-[JMailTM JavaDocs](https://shivam1608.github.io/JOpenTDB/)
+[JOpenTDB JavaDocs](https://shivam1608.github.io/JOpenTDB/)
 
 # Quick Start
 - Get 10 Questions for Trivia (Synchronous)
@@ -115,7 +115,7 @@ import me.shivzee.session.Session;
 OpenTDB trivia = new OpenTDB(Session.create());
 ```
 
-## Some Comman Methods/Functions of Question Class
+## Some Common Methods/Functions of Question Class
 - the Question class
 ```java
 String triviaQuestion = question.getQuestion();  // Get The Question
